@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  SearchMusicViewController.swift
 //  iMusic
 //
 //  Created by Дмитрий Кириченко on 10.12.2020.
@@ -14,7 +14,7 @@ struct TrackModel {
     var artistName: String
 }
 
-class SearchViewController: UITableViewController {
+class SearchMusicViewController: UITableViewController {
     
     private var timer: Timer?
     var networkService = NetworkService()
@@ -56,7 +56,7 @@ class SearchViewController: UITableViewController {
 }
 
 
-extension SearchViewController: UISearchBarDelegate {
+extension SearchMusicViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 //        print(searchText)
