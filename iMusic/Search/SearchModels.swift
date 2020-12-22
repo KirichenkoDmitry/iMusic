@@ -14,13 +14,13 @@ enum Search {
     struct Request {
       enum RequestType {
         case some
-        case getTracks
+        case getTracks(searchTerm: String)
       }
     }
     struct Response {
       enum ResponseType {
         case some
-        case presentTracks
+        case presentTracks(searchResponse: SearchResponse?)
       }
     }
     struct ViewModel {
@@ -31,4 +31,15 @@ enum Search {
     }
   }
   
+}
+
+struct SearchViewModel {
+    struct Cell {
+        var iconUrlString: String?
+        var trackName: String
+        var collectionName: String
+        var artistName: String
+    }
+    
+    let cells: [Cell]
 }

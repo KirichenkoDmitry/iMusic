@@ -20,7 +20,10 @@ class SearchPresenter: SearchPresentationLogic {
     switch response {
     case .some:
         print("presenter.some")
-    case .presentTracks:
+    case .presentTracks(let searchResults):
+        searchResults?.results.map({ (track) in
+            print(track.collectionName)
+        })
         print("presenter.presentTracks")
         viewController?.displayData(viewModel: Search.Model.ViewModel.ViewModelData.displayTracks)
     }

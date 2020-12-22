@@ -90,7 +90,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        interactor?.makeRequest(request: Search.Model.Request.RequestType.some)
+        interactor?.makeRequest(request: Search.Model.Request.RequestType.getTracks(searchTerm: searchText))
     }
     
 }
