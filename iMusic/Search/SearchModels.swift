@@ -14,16 +14,19 @@ enum Search {
     struct Request {
       enum RequestType {
         case some
+        case getTracks
       }
     }
     struct Response {
       enum ResponseType {
         case some
+        case presentTracks
       }
     }
     struct ViewModel {
       enum ViewModelData {
         case some
+        case displayTracks
       }
     }
   }

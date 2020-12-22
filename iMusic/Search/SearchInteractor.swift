@@ -21,6 +21,15 @@ class SearchInteractor: SearchBusinessLogic {
     if service == nil {
       service = SearchService()
     }
+    
+    switch request {
+    case .some:
+        print("interactor.some")
+        presenter?.presentData(response: Search.Model.Response.ResponseType.presentTracks)
+    case .getTracks:
+        print("interactor.getTracks")
+        presenter?.presentData(response: Search.Model.Response.ResponseType.presentTracks)
+    }
   }
   
 }
