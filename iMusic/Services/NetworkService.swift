@@ -13,7 +13,7 @@ class NetworkService {
     func fetchTracks(searchText: String, complition: @escaping (SearchResponse?) -> Void) {
         let url = "https://itunes.apple.com/search"
         let parameters = ["term": "\(searchText)",
-                          "limit": "10",
+                          "limit": "100",
                           "media": "music"
         ]
         
@@ -31,7 +31,6 @@ class NetworkService {
                 let objects = try decoder.decode(SearchResponse.self, from: data)
                 print("objects: ", objects)
                 complition(objects)
-                
                 
             } catch let jsonError {
                 print("Failed to decode JSON", jsonError)
