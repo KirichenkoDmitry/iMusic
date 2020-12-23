@@ -3,19 +3,16 @@
     {
       "filename" : "Drag Down.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
       "filename" : "Drag Down@2x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
       "filename" : "Drag Down@3x.png",
       "idiom" : "universal",
-      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],
