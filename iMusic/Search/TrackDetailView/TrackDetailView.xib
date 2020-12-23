@@ -28,7 +28,7 @@
                                 <action selector="dragDownButtonTapped:" destination="xak-yX-3ED" eventType="touchUpInside" id="EC5-Mi-szw"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-86-yi2">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-86-yi2">
                             <rect key="frame" x="0.0" y="54" width="368" height="368"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="iu4-86-yi2" secondAttribute="height" multiplier="1:1" id="D60-wZ-R63"/>
