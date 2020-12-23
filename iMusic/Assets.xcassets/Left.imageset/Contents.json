@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "Left.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Left@2x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Left@3x.png",
+      "idiom" : "universal",
+      "locale" : "SwiftBook",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

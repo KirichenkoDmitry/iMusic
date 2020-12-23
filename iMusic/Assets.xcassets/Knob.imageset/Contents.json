@@ -1,16 +1,21 @@
 {
   "images" : [
     {
-      "filename" : "cat10.jpg",
+      "filename" : "Knob.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
+      "filename" : "Knob@2x.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
+      "filename" : "Knob@3x.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],

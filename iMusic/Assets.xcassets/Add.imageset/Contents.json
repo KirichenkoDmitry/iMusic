@@ -1,16 +1,21 @@
 {
   "images" : [
     {
-      "filename" : "cat4.jpg",
+      "filename" : "Add.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "1x"
     },
     {
+      "filename" : "Add@2x.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "2x"
     },
     {
+      "filename" : "Add@3x.png",
       "idiom" : "universal",
+      "locale" : "SwiftBook",
       "scale" : "3x"
     }
   ],
