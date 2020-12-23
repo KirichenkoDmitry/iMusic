@@ -10,6 +10,9 @@
 		7B8616AC6066E7D456A57389 /* Pods_iMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901AC94266F57246D4BC5A74 /* Pods_iMusic.framework */; };
 		FB265B8225939D4100C365B0 /* TrackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB265B8125939D4100C365B0 /* TrackCell.xib */; };
 		FB265B8525939D5500C365B0 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265B8425939D5500C365B0 /* TrackCell.swift */; };
+		FB265B8F2593CD0900C365B0 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265B8E2593CD0900C365B0 /* FooterView.swift */; };
+		FB265B932593D55B00C365B0 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB265B922593D55B00C365B0 /* TrackDetailView.xib */; };
+		FB265B962593D56B00C365B0 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB265B952593D56B00C365B0 /* TrackDetailView.swift */; };
 		FB3E05AA25825A1400098A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05A925825A1400098A3F /* AppDelegate.swift */; };
 		FB3E05AC25825A1400098A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05AB25825A1400098A3F /* SceneDelegate.swift */; };
 		FB3E05AE25825A1400098A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05AD25825A1400098A3F /* ViewController.swift */; };
@@ -34,6 +37,9 @@
 		D8004FA93288AC6484ACD0C6 /* Pods-iMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.debug.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		FB265B8125939D4100C365B0 /* TrackCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCell.xib; sourceTree = "<group>"; };
 		FB265B8425939D5500C365B0 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		FB265B8E2593CD0900C365B0 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		FB265B922593D55B00C365B0 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
+		FB265B952593D56B00C365B0 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		FB3E05A625825A1400098A3F /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3E05A925825A1400098A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3E05AB25825A1400098A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FB265B8D2593CCF600C365B0 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				FB265B8E2593CD0900C365B0 /* FooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
+		FB265B912593D53900C365B0 /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				FB265B922593D55B00C365B0 /* TrackDetailView.xib */,
+				FB265B952593D56B00C365B0 /* TrackDetailView.swift */,
+			);
+			path = TrackDetailView;
+			sourceTree = "<group>";
+		};
 		FB3E059D25825A1400098A3F = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +156,8 @@
 		FB401F802591341D00D1A999 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				FB265B912593D53900C365B0 /* TrackDetailView */,
+				FB265B8D2593CCF600C365B0 /* FooterView */,
 				FB265B8025939D2500C365B0 /* Cell */,
 				FB401FA32592461B00D1A999 /* SearchViewController.storyboard */,
 				FB401F982591358700D1A999 /* SearchViewController.swift */,
@@ -230,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3E05B625825A1700098A3F /* LaunchScreen.storyboard in Resources */,
+				FB265B932593D55B00C365B0 /* TrackDetailView.xib in Resources */,
 				FB3E05B325825A1700098A3F /* Assets.xcassets in Resources */,
 				FB401FA42592461B00D1A999 /* SearchViewController.storyboard in Resources */,
 				FB265B8225939D4100C365B0 /* TrackCell.xib in Resources */,
@@ -290,6 +316,7 @@
 				FB3E05BF25825ABA00098A3F /* MainTapBarController.swift in Sources */,
 				FB3FF7B72582C9AE004CFFE9 /* SearchResponse.swift in Sources */,
 				FB401FA02591358700D1A999 /* SearchInteractor.swift in Sources */,
+				FB265B8F2593CD0900C365B0 /* FooterView.swift in Sources */,
 				FB265B8525939D5500C365B0 /* TrackCell.swift in Sources */,
 				FB3E05AE25825A1400098A3F /* ViewController.swift in Sources */,
 				FB3E05AA25825A1400098A3F /* AppDelegate.swift in Sources */,
@@ -299,6 +326,7 @@
 				FB401F9E2591358700D1A999 /* SearchModels.swift in Sources */,
 				FB3E05AC25825A1400098A3F /* SceneDelegate.swift in Sources */,
 				FB401F9B2591358700D1A999 /* SearchPresenter.swift in Sources */,
+				FB265B962593D56B00C365B0 /* TrackDetailView.swift in Sources */,
 				FB3FF7BA2582D69C004CFFE9 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
