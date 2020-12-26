@@ -30,6 +30,7 @@
 		FB401FA02591358700D1A999 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB401F992591358700D1A999 /* SearchInteractor.swift */; };
 		FB401FA42592461B00D1A999 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB401FA32592461B00D1A999 /* SearchViewController.storyboard */; };
 		FB401FA825924A1200D1A999 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */; };
+		FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		FB401F992591358700D1A999 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		FB401FA32592461B00D1A999 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		FD6E4E3592BC0B5D48AF6AE7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */,
+				FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				FB3FF7B72582C9AE004CFFE9 /* SearchResponse.swift in Sources */,
 				FB401FA02591358700D1A999 /* SearchInteractor.swift in Sources */,
 				FB265B8F2593CD0900C365B0 /* FooterView.swift in Sources */,
+				FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */,
 				FB265B8525939D5500C365B0 /* TrackCell.swift in Sources */,
 				FB3E05AE25825A1400098A3F /* ViewController.swift in Sources */,
 				FB3E05AA25825A1400098A3F /* AppDelegate.swift in Sources */,
