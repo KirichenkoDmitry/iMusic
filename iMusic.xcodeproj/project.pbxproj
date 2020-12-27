@@ -18,7 +18,7 @@
 		FB3E05AE25825A1400098A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05AD25825A1400098A3F /* ViewController.swift */; };
 		FB3E05B325825A1700098A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3E05B225825A1700098A3F /* Assets.xcassets */; };
 		FB3E05B625825A1700098A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3E05B425825A1700098A3F /* LaunchScreen.storyboard */; };
-		FB3E05BF25825ABA00098A3F /* MainTapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05BE25825ABA00098A3F /* MainTapBarController.swift */; };
+		FB3E05BF25825ABA00098A3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3E05BE25825ABA00098A3F /* MainTabBarController.swift */; };
 		FB3FF7AC25825F3E004CFFE9 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF7AB25825F3E004CFFE9 /* SearchMusicViewController.swift */; };
 		FB3FF7B72582C9AE004CFFE9 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF7B62582C9AE004CFFE9 /* SearchResponse.swift */; };
 		FB3FF7BA2582D69C004CFFE9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FF7B92582D69C004CFFE9 /* NetworkService.swift */; };
@@ -31,6 +31,7 @@
 		FB401FA42592461B00D1A999 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB401FA32592461B00D1A999 /* SearchViewController.storyboard */; };
 		FB401FA825924A1200D1A999 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */; };
 		FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */; };
+		FB48B5D92597F23700AAF33B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D82597F23700AAF33B /* Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +49,7 @@
 		FB3E05B225825A1700098A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3E05B525825A1700098A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3E05B725825A1700098A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB3E05BE25825ABA00098A3F /* MainTapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTapBarController.swift; sourceTree = "<group>"; };
+		FB3E05BE25825ABA00098A3F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FB3FF7AB25825F3E004CFFE9 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		FB3FF7B62582C9AE004CFFE9 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		FB3FF7B92582D69C004CFFE9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		FB401FA32592461B00D1A999 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
+		FB48B5D82597F23700AAF33B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		FD6E4E3592BC0B5D48AF6AE7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +145,7 @@
 				FB3E05A925825A1400098A3F /* AppDelegate.swift */,
 				FB3E05AB25825A1400098A3F /* SceneDelegate.swift */,
 				FB401F90259134D600D1A999 /* Services */,
-				FB3E05BE25825ABA00098A3F /* MainTapBarController.swift */,
+				FB3E05BE25825ABA00098A3F /* MainTabBarController.swift */,
 				FB401F802591341D00D1A999 /* Search */,
 				FB3FF7AB25825F3E004CFFE9 /* SearchMusicViewController.swift */,
 				FB3E05AD25825A1400098A3F /* ViewController.swift */,
@@ -186,6 +188,7 @@
 			children = (
 				FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */,
 				FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */,
+				FB48B5D82597F23700AAF33B /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -316,12 +319,13 @@
 			files = (
 				FB3FF7AC25825F3E004CFFE9 /* SearchMusicViewController.swift in Sources */,
 				FB401FA825924A1200D1A999 /* UIViewController + Storyboard.swift in Sources */,
-				FB3E05BF25825ABA00098A3F /* MainTapBarController.swift in Sources */,
+				FB3E05BF25825ABA00098A3F /* MainTabBarController.swift in Sources */,
 				FB3FF7B72582C9AE004CFFE9 /* SearchResponse.swift in Sources */,
 				FB401FA02591358700D1A999 /* SearchInteractor.swift in Sources */,
 				FB265B8F2593CD0900C365B0 /* FooterView.swift in Sources */,
 				FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */,
 				FB265B8525939D5500C365B0 /* TrackCell.swift in Sources */,
+				FB48B5D92597F23700AAF33B /* Nib.swift in Sources */,
 				FB3E05AE25825A1400098A3F /* ViewController.swift in Sources */,
 				FB3E05AA25825A1400098A3F /* AppDelegate.swift in Sources */,
 				FB401F9C2591358700D1A999 /* SearchWorker.swift in Sources */,
