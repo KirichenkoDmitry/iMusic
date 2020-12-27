@@ -75,6 +75,7 @@ class TrackDetailView: UIView {
     private func setupGestures() {
         miniTrackView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapMaximized)))
         miniTrackView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePan)))
+        addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handleDismissalPan)))
     }
     
     private func playTrack(previewUrl: String?) {
@@ -127,6 +128,24 @@ class TrackDetailView: UIView {
                 self.maximizedStackView.alpha = 0
             }
         }, completion: nil)
+    }
+    
+    @objc private func handleDismissalPan(gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .changed:
+            let translation = gesture.translation(in: self.superview)
+            maximizedStackView.transform = CGAffineTransform(translationX: 0, y: translation.y)
+        case .ended:
+            let translation = gesture.translation(in: self.superview)
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+                self.maximizedStackView.transform = .identity
+                if translation.y > 50 {
+                    self.tabBarDelegate?.minimizeTrackDetailController()
+                }
+            }, completion: nil)
+        @unknown default:
+            print("unknown default")
+        }
     }
     
     //MARK: - Time setup
