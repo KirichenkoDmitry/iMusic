@@ -32,6 +32,7 @@
 		FB401FA825924A1200D1A999 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */; };
 		FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */; };
 		FB48B5D92597F23700AAF33B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D82597F23700AAF33B /* Nib.swift */; };
+		FB48B5DD2598D21300AAF33B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5DC2598D21300AAF33B /* Library.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		FB401FA725924A1200D1A999 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
 		FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		FB48B5D82597F23700AAF33B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
+		FB48B5DC2598D21300AAF33B /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		FD6E4E3592BC0B5D48AF6AE7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				FB3E05AB25825A1400098A3F /* SceneDelegate.swift */,
 				FB401F90259134D600D1A999 /* Services */,
 				FB3E05BE25825ABA00098A3F /* MainTabBarController.swift */,
+				FB48B5DC2598D21300AAF33B /* Library.swift */,
 				FB401F802591341D00D1A999 /* Search */,
 				FB3FF7AB25825F3E004CFFE9 /* SearchMusicViewController.swift */,
 				FB3E05AD25825A1400098A3F /* ViewController.swift */,
@@ -334,6 +337,7 @@
 				FB401F9E2591358700D1A999 /* SearchModels.swift in Sources */,
 				FB3E05AC25825A1400098A3F /* SceneDelegate.swift in Sources */,
 				FB401F9B2591358700D1A999 /* SearchPresenter.swift in Sources */,
+				FB48B5DD2598D21300AAF33B /* Library.swift in Sources */,
 				FB265B962593D56B00C365B0 /* TrackDetailView.swift in Sources */,
 				FB3FF7BA2582D69C004CFFE9 /* NetworkService.swift in Sources */,
 			);
