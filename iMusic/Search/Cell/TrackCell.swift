@@ -24,6 +24,7 @@ class TrackCell: UITableViewCell {
     @IBOutlet var artistNameLabel: UILabel!
     @IBOutlet var collectionNameLabel: UILabel!
     @IBOutlet var trackImageView: UIImageView!
+    @IBOutlet var addTrackOutlet: UIButton!
     
     override class func awakeFromNib() {
         super.awakeFromNib()
@@ -40,6 +41,17 @@ class TrackCell: UITableViewCell {
     func set(viewModel: SearchViewModel.Cell) {
         
         self.cell = viewModel
+        
+        let savedTracks = UserDefaults.standard.savedTracks()
+        let hasFavourite = savedTracks.firstIndex(where: {
+            $0.trackName == self.cell?.trackName && $0.artistName == self.cell?.artistName
+        }) != nil
+        if hasFavourite {
+            addTrackOutlet.isHidden = true
+        } else {
+            addTrackOutlet.isHidden = false
+        }
+        
         trackNameLabel.text = viewModel.trackName
         artistNameLabel.text = viewModel.artistName
         collectionNameLabel.text = viewModel.collectionName.uppercased()
@@ -51,25 +63,19 @@ class TrackCell: UITableViewCell {
     }
     
     @IBAction func addTrackAction(_ sender: Any) {
-        print("444")
+
         let defaults = UserDefaults.standard
-//        defaults.set(25, forKey: "Age")
-//        defaults.set("hello", forKey: "String")
+        guard let cell = cell else { return }
+        addTrackOutlet.isHidden = true
         
-        if let saveData = try? NSKeyedArchiver.archivedData(withRootObject: cell, requiringSecureCoding: false) {
+        var listOfTracks = defaults.savedTracks()
+        
+        listOfTracks.append(cell)
+        
+        if let saveData = try? NSKeyedArchiver.archivedData(withRootObject: listOfTracks, requiringSecureCoding: false) {
             print("Успех")
-            defaults.set(saveData, forKey: "tracks")
+            defaults.set(saveData, forKey: UserDefaults.favouriteTrackKey)
         }
-    }
-    
-    @IBAction func showInfoAction(_ sender: Any) {
-        let defaults = UserDefaults.standard
-        if let savedTrack = defaults.object(forKey: "tracks") as? Data {
-            if let decodedTracks = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedTrack) as? SearchViewModel.Cell {
-                print("decodedTracks.trackName: \(decodedTracks.trackName)")
-            }
-        }
-        
     }
     
 }

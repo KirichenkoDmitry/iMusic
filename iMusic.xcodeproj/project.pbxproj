@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,8 @@
 		FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */; };
 		FB48B5D92597F23700AAF33B /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5D82597F23700AAF33B /* Nib.swift */; };
 		FB48B5DD2598D21300AAF33B /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5DC2598D21300AAF33B /* Library.swift */; };
+		FB48B5FA2599498300AAF33B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB48B5F92599498300AAF33B /* UserDefaults.swift */; };
+		FB48B601259950A400AAF33B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = FB48B600259950A400AAF33B /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,7 @@
 		FB48B5D52597D7E500AAF33B /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
 		FB48B5D82597F23700AAF33B /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		FB48B5DC2598D21300AAF33B /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		FB48B5F92599498300AAF33B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		FD6E4E3592BC0B5D48AF6AE7 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB48B601259950A400AAF33B /* URLImage in Frameworks */,
 				7B8616AC6066E7D456A57389 /* Pods_iMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +98,7 @@
 			children = (
 				FB265B8125939D4100C365B0 /* TrackCell.xib */,
 				FB265B8425939D5500C365B0 /* TrackCell.swift */,
+				FB48B5F92599498300AAF33B /* UserDefaults.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -222,6 +227,9 @@
 			dependencies = (
 			);
 			name = iMusic;
+			packageProductDependencies = (
+				FB48B600259950A400AAF33B /* URLImage */,
+			);
 			productName = iMusic;
 			productReference = FB3E05A625825A1400098A3F /* iMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +257,9 @@
 				Base,
 			);
 			mainGroup = FB3E059D25825A1400098A3F;
+			packageReferences = (
+				FB48B5FF259950A400AAF33B /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = FB3E05A725825A1400098A3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -325,6 +336,7 @@
 				FB3E05BF25825ABA00098A3F /* MainTabBarController.swift in Sources */,
 				FB3FF7B72582C9AE004CFFE9 /* SearchResponse.swift in Sources */,
 				FB401FA02591358700D1A999 /* SearchInteractor.swift in Sources */,
+				FB48B5FA2599498300AAF33B /* UserDefaults.swift in Sources */,
 				FB265B8F2593CD0900C365B0 /* FooterView.swift in Sources */,
 				FB48B5D62597D7E500AAF33B /* CMTime + Extension.swift in Sources */,
 				FB265B8525939D5500C365B0 /* TrackCell.swift in Sources */,
@@ -537,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB48B5FF259950A400AAF33B /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB48B600259950A400AAF33B /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB48B5FF259950A400AAF33B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB3E059E25825A1400098A3F /* Project object */;
 }
