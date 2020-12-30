@@ -46,7 +46,7 @@ struct Library: View {
                 }.padding().frame(height: 68)
                 
                 Divider().padding(.leading).padding(.trailing)
-                
+            //Fix geometry size of cell
                 List {
                     ForEach(tracks) { track in
                         LibraryCell(cell: track).gesture(
@@ -73,7 +73,9 @@ struct Library: View {
                     }
                     .onDelete(perform: delete)
                 }
-            }.actionSheet(isPresented: $showingAlert, content: {
+
+            }
+            .actionSheet(isPresented: $showingAlert, content: {
                 ActionSheet(title: Text("Are you sure you want to delete this track?"), buttons: [.destructive(Text("Delete"), action: {
                     print("Deleting: \(self.track.trackName)")
                     self.delete(track: self.track)
@@ -81,6 +83,7 @@ struct Library: View {
                 ])
             })
             .navigationBarTitle("Library")
+            
         }
     }
     
@@ -120,7 +123,7 @@ struct LibraryCell: View {
             VStack(alignment: .leading) {
                 Text("\(cell.trackName)")
                 Text("\(cell.artistName)")
-            } 
+            }
         }
     
     }
