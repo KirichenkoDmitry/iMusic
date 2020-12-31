@@ -46,7 +46,6 @@ struct Library: View {
                 }.padding().frame(height: 68)
                 
                 Divider().padding(.leading).padding(.trailing)
-            //Fix geometry size of cell
                 List {
                     ForEach(tracks) { track in
                         LibraryCell(cell: track).gesture(
@@ -72,7 +71,7 @@ struct Library: View {
                                                     }))
                     }
                     .onDelete(perform: delete)
-                }
+                }.listStyle(PlainListStyle())
 
             }
             .actionSheet(isPresented: $showingAlert, content: {
