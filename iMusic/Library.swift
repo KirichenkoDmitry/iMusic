@@ -46,33 +46,25 @@ struct Library: View {
                 }.padding().frame(height: 68)
                 
                 Divider().padding(.leading).padding(.trailing)
+                
                 List {
                     ForEach(tracks) { track in
                         LibraryCell(cell: track).gesture(
                             LongPressGesture()
-                                .onEnded { _ in
-                                    print("Pressed!")
+                                .onEnded ({ _ in
                                     self.track = track
                                     self.showingAlert = true
-                                }
+                                })
                                 .simultaneously(with: TapGesture()
-                                                    .onEnded { _ in
-                                                        let keyWindow = UIApplication.shared.connectedScenes
-                                                        .filter({$0.activationState == .foregroundActive})
-                                                        .map({$0 as? UIWindowScene})
-                                                        .compactMap({$0})
-                                                        .first?.windows
-                                                        .filter({$0.isKeyWindow}).first
-                                                        let tabBarVC = keyWindow?.rootViewController as? MainTabBarController
-                                                        tabBarVC?.trackDetailView.delegate = self
-    
+                                                    .onEnded ({ _ in
+                                                        self.setTrackDetailViewDelegate()
                                                         self.track = track
                                                         self.tabBarDelegate?.maximizeTrackDetailController(viewModel: self.track)
-                                                    }))
+                                                    })))
                     }
                     .onDelete(perform: delete)
                 }.listStyle(PlainListStyle())
-
+                
             }
             .actionSheet(isPresented: $showingAlert, content: {
                 ActionSheet(title: Text("Are you sure you want to delete this track?"), buttons: [.destructive(Text("Delete"), action: {
@@ -103,6 +95,17 @@ struct Library: View {
             defaults.set(savedData, forKey: UserDefaults.favouriteTrackKey)
         }
     }
+    
+    func setTrackDetailViewDelegate() {
+        let keyWindow = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({ $0 as? UIWindowScene })
+            .compactMap({ $0 })
+            .first?.windows
+            .filter({ $0.isKeyWindow }).first
+        let tabBarVC = keyWindow?.rootViewController as? MainTabBarController
+        tabBarVC?.trackDetailView.delegate = self
+    }
 }
 
 struct LibraryCell: View {
@@ -124,7 +127,7 @@ struct LibraryCell: View {
                 Text("\(cell.artistName)")
             }
         }
-    
+        
     }
 }
 
