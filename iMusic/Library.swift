@@ -49,22 +49,23 @@ struct Library: View {
                 
                 List {
                     ForEach(tracks) { track in
-                        LibraryCell(cell: track).gesture(
-                            LongPressGesture()
-                                .onEnded ({ _ in
+                        LibraryCell(cell: track)
+                            .gesture(DragGesture(minimumDistance: 30, coordinateSpace: .local))
+                            .gesture(LongPressGesture()
+                                .onEnded { _ in
                                     self.track = track
                                     self.showingAlert = true
-                                })
+                                }
                                 .simultaneously(with: TapGesture()
-                                                    .onEnded ({ _ in
+                                                    .onEnded { _ in
                                                         self.setTrackDetailViewDelegate()
                                                         self.track = track
                                                         self.tabBarDelegate?.maximizeTrackDetailController(viewModel: self.track)
-                                                    })))
+                                                    }))
                     }
                     .onDelete(perform: delete)
                 }.listStyle(PlainListStyle())
-                
+
             }
             .actionSheet(isPresented: $showingAlert, content: {
                 ActionSheet(title: Text("Are you sure you want to delete this track?"), buttons: [.destructive(Text("Delete"), action: {
