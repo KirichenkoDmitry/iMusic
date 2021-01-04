@@ -2,7 +2,7 @@
 
 
 Music application that uses iTunes Search API. 
-**Stack:** iTunes Search API, UIKit, SwiftUI, AVKit.
+<img src="https://github.com/KirichenkoDmitry/iMusic/blob/main/imusic_s8t6gQ3o_SNVW.gif" width="300">
 
 ## Features
 
@@ -19,4 +19,4 @@ Network: Alamofire
 
 Image Downloader: SDWebImage, URLImage
 
-<img src="https://github.com/KirichenkoDmitry/iMusic/blob/main/imusic_s8t6gQ3o_SNVW.gif" width="200">
+
