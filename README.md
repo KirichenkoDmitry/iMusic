@@ -19,4 +19,4 @@ Network: Alamofire
 
 Image Downloader: SDWebImage, URLImage
 
-![imusic_s8t6gQ3o_SNVW](https://user-images.githubusercontent.com/63911055/103576257-eadfa480-4ee3-11eb-8d4a-6331d9a797b9.gif)
+<img src="https://github.com/KirichenkoDmitry/iMusic/blob/main/imusic_s8t6gQ3o_SNVW.gif" width="200">
