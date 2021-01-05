@@ -181,6 +181,7 @@ class TrackDetailView: UIView {
     deinit {
         print("TrackdetailView memory being reclaimed...")
     }
+    
     //MARK: - Animations
     
     private func enlargeTrackImageView() {

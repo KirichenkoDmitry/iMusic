@@ -36,9 +36,6 @@ class NetworkService {
                 print("Failed to decode JSON", jsonError)
                 complition(nil)
             }
-            
-//                let someString = String(data: data, encoding: .utf8)
-//                print(someString ?? "")
         }
     }
 }
