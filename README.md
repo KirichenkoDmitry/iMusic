@@ -3,7 +3,7 @@
 
 Music application that uses iTunes Search API. 
 
-<img src="https://github.com/KirichenkoDmitry/iMusic/blob/main/imusic_s8t6gQ3o_SNVW.gif" width="250">
+<img src="https://user-images.githubusercontent.com/63911055/106357444-17d27c00-6317-11eb-899f-66c61fcbd7c2.gif" width="250">
 
 ## Features
 
