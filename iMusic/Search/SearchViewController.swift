@@ -121,9 +121,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         print("cellViewModel.trackName:", cellViewModel.trackName)
         
         self.tabBarDelegate?.maximizeTrackDetailController(viewModel: cellViewModel)
-        
-    
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
